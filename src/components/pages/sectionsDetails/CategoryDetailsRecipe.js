@@ -30,6 +30,11 @@ export default function CategoryDetailsRecipe() {
                 <FaArrowLeft className='arrow-icon' />
             </Link>
         </div>
+        <div className='category-details-recipe-bottom'>
+            <div className='category-details-recipe-bottom-image'>
+                <img src={recipe.imageSource} alt={recipe.title} className="details-image" />
+            </div>
+        </div>
     </div>
   )
 }
