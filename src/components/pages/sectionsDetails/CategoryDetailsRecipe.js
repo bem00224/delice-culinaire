@@ -1,7 +1,8 @@
 import React from 'react'
-import { useParams } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 import { fakeData } from '../../../data/fakeData'
 import '../../../styles/categoryDetailsRecipe.css'
+import { FaArrowLeft } from 'react-icons/fa'
 
 export default function CategoryDetailsRecipe() {
     const { slug } = useParams()
@@ -25,6 +26,9 @@ export default function CategoryDetailsRecipe() {
             <div className='content-titleBar'>
                 <h2 className="details-title">{recipe.title}</h2>
             </div>
+            <Link to={"/"} className='arrow-link'>
+                <FaArrowLeft className='arrow-icon' />
+            </Link>
         </div>
     </div>
   )
