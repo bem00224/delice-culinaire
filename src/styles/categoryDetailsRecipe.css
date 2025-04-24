@@ -113,3 +113,9 @@
 .icon-heart {
     font-size: 1.3rem;
 }
+
+.details-section-title {
+    color: rgb(255, 66, 105);
+    font-size: 1.3rem;
+    margin: 30px 0px 20px;
+}
