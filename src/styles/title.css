@@ -1,0 +1,25 @@
+.category-details-recipe-content {
+    position: relative;
+}
+
+.content-titleBar {
+    text-align: center;
+    margin: 70px 0px 50px;
+}
+
+.details-title {
+    font-size: 1.7rem;
+}
+
+.arrow-links {
+    color: rgb(255, 66, 105);
+    font-size: 2rem;
+}
+
+.arrow-icon {
+    position: absolute;
+    top: 10px;
+    left: 100px;
+    cursor: pointer;
+    font-size: 1.5rem;
+}

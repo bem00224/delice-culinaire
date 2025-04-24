@@ -24,7 +24,7 @@ export default function CategoryDetails() {
             {recettes.length===0 ? ( <p>Pas de recette disponible pour cette categorie.</p> ) : (
                 recettes.map(({id,slug,title,imageSource}) => (
                     <div key={id} className="recette-carde">
-                        <Link to={`/category/${encodeURIComponent(slug)}`}>
+                        <Link to={`/recipe-detail/${encodeURIComponent(slug)}`}>
                             <div className='recette-image-content'>
                                 <img className="recette-image" src={imageSource} alt={title} />
                             </div>
