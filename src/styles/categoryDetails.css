@@ -1,0 +1,19 @@
+.category-details {
+    border: 1px solid red;
+}
+
+.recette-image-content {
+    width: 300px;
+    border-radius: 10px;
+    margin: 10px;
+    overflow: hidden;
+    position: relative;
+    transition: 0.9s;
+}
+
+.recette-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+  }
