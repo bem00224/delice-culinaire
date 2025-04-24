@@ -1,0 +1,36 @@
+.carnet-details-btn-content {
+    margin-left: 60px;
+}
+
+.carnet-details-btn {
+    background-color: rgb(255, 66, 105);
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    gap: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px;
+    transition: 0.15s ease-in-out;
+    position: relative;
+    left: 48%;
+    transform: translateX(-50%) translateY(0px);
+    padding: 0px 20px;
+    font-size: 1.2rem;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    padding: 14px 24px;
+    height: 50px;
+    color: white;
+    font-weight: 700;
+    font-size: 1.2rem;
+    transition: 1s;
+}
+
+.carnet-details-btn:hover {
+    background-color: rgb(156, 22, 49);
+}
+
+.icon-heart {
+    font-size: 1.3rem;
+}
