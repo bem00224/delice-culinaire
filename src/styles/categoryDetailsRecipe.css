@@ -1,0 +1,16 @@
+.category-details-recipe {
+    border: 1px solid red;
+}
+
+.category-details-recipe-content {
+    position: relative;
+}
+
+.content-titleBar {
+    text-align: center;
+    margin: 70px 0px 50px;
+}
+
+.details-title {
+    font-size: 1.7rem;
+}
