@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 
 export default function Category() {
   let category = fakeData.Category;
-  console.log(category)
+  
   return (
     <div className='category'>
       {
