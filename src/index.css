@@ -7,9 +7,11 @@
   list-style-type: none;
   text-decoration: none;
   font-family: "Source Sans 3", sans-serif;
+  font-size: 1rem;
 }
 
 a {
   color: black;
   text-decoration: none;
+  font-weight: 500;
 }
