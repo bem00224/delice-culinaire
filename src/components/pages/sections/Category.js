@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import '../../../styles/category.css'
 import { fakeData } from '../../../data/fakeData'
 import { Link } from 'react-router-dom'
