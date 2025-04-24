@@ -55,6 +55,18 @@ export default function CategoryDetailsRecipe() {
                         <CiHeart className='icon-heart'/> Mon carnet
                     </button>
                 </div>
+                <div className='category-details-section'>
+                    <div>
+                        <h3 className='details-section-title'>Instructions</h3>
+                        <div className="details-section">
+                            <ol>
+                                {recipe.instructions.map((step, index)=> (
+                                    <li key={index}>{step}</li>
+                                )) }
+                            </ol>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
