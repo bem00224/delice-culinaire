@@ -3,6 +3,8 @@ import { Link, useParams } from 'react-router-dom'
 import { fakeData } from '../../../data/fakeData'
 import '../../../styles/categoryDetailsRecipe.css'
 import { FaArrowLeft } from 'react-icons/fa'
+import { IoMdTime } from 'react-icons/io'
+import { PiCookingPot } from 'react-icons/pi'
 
 export default function CategoryDetailsRecipe() {
     const { slug } = useParams()
@@ -33,6 +35,16 @@ export default function CategoryDetailsRecipe() {
         <div className='category-details-recipe-bottom'>
             <div className='category-details-recipe-bottom-image'>
                 <img src={recipe.imageSource} alt={recipe.title} className="details-image" />
+            </div>
+            <div className="details-info">
+                <p className='details-info-global'>
+                    <IoMdTime className='details-info-icon' />
+                    <span className='details-info-text'> Préparation : {recipe.preparationTime} min </span>
+                </p>
+                <p className='details-info-global'>
+                    <PiCookingPot className='details-info-icon'/> 
+                    <span className='details-info-text'>Cuisson : {recipe.cookingTime} min </span>
+                </p>
             </div>
         </div>
     </div>
