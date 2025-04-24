@@ -6,6 +6,7 @@ import { FaArrowLeft } from 'react-icons/fa'
 import { IoMdTime } from 'react-icons/io'
 import { PiCookingPot } from 'react-icons/pi'
 import { CiHeart } from 'react-icons/ci'
+import { FaMinus, FaPlus } from "react-icons/fa";
 
 export default function CategoryDetailsRecipe() {
     const { slug } = useParams()
@@ -56,7 +57,27 @@ export default function CategoryDetailsRecipe() {
                     </button>
                 </div>
                 <div className='category-details-section'>
-                    <div>
+                    <div className='category-details-ingredient'>
+                        <h3 className='details-section-title'>Ingrédients</h3>
+                        <div className='details-section-nbre'>
+                            <button className='details-section-moin'><FaMinus/></button>
+                            <div className='details-section-personne'><span>personnes</span></div>
+                            <button className='details-section-plus'><FaPlus/></button>
+                        </div>
+                        <div className="details-section">
+                            <ul>
+                                {
+                                    recipe.ingredients.map((ingredient, index) => (
+                                        <li key={index}>
+                                            {ingredient.name}
+                                            {ingredient.quantity}
+                                        </li>
+                                    ) )
+                                }
+                            </ul>
+                        </div>
+                    </div>
+                    <div className='category-details-instructions'>
                         <h3 className='details-section-title'>Instructions</h3>
                         <div className="details-section">
                             <ol>
