@@ -48,3 +48,31 @@
     height: 486px;
     margin: 0px 0px 50px;
 }
+
+.details-info {
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    gap: 100px;
+    margin-bottom: 50px;
+}
+
+.details-info-global {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    background-color: rgb(249, 241, 241);
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+}
+
+.details-info-icon {
+    color: red;
+    margin: 0px 5px;
+    font-size: 1.3rem;
+}
+
+.details-info-text {
+    text-align: center;
+}
