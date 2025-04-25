@@ -22,11 +22,11 @@ export default function CategoryDetails() {
         </div>
         <div className="recette-list">
             {recettes.length===0 ? ( <p>Pas de recette disponible pour cette categorie.</p> ) : (
-                recettes.map(({id,slug,title,imageSource}) => (
-                    <div key={id} className="recette-carde">
+                recettes.map(({slug,title,imageSource}) => (
+                    <div key={slug} className="recette-carde">
                         <Link to={`/recipe-detail/${encodeURIComponent(slug)}`}>
                             <div className='recette-image-content'>
-                                <img className="recette-image" src={imageSource} alt={title} />
+                                <img className="recette-image" src={imageSource} alt={title} loading="lazy" />
                             </div>
                         </Link>
                         <h3 className="recette-title">{title}</h3>
