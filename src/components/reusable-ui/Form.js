@@ -19,7 +19,9 @@ export default function Form() {
                 <FaSearch className='search-icon' />
             </div>
         </div>
-        <div className='btn-search'></div>
+        <div className='btn-search'>
+            <button type='submit' className='button-search'>Rechercher</button>
+        </div>
     </form>
   )
 }
