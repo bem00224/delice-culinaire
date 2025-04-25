@@ -13,7 +13,7 @@ export default function Navbar() {
     <header className="navbar">
       <div className='navbar-container'>
         <Link to="/" className="navbar-logo">
-          <img src={logo} alt="logo" className="logo" />
+          <img src={logo} alt="logo" className="logo" loading="lazy"/>
         </Link>
         <nav className={`navbar-menu ${isOpen ? "open" : ""}`}>
           <Link to="/mes-recettes" className="btn desktop-only">Mes recettes</Link>
