@@ -9,6 +9,7 @@ import CategoryDetailsRecipe from './components/pages/sectionsDetails/CategoryDe
 import MesRecettes from './components/pages/MesRecettes';
 import { ToastContainer } from 'react-toastify';
 import ScrollToTop from './components/reusable-ui/ScrollToTop';
+import CurrentNews from './components/pages/sections/CurrentNews';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path='/category/:slug' element={<CategoryDetails/>} />
         <Route path='/recipe-detail/:slug' element={<CategoryDetailsRecipe/>} />
         <Route path="/mes-recettes" element={<MesRecettes />} />
+        <Route path="/current-news" element={<CurrentNews />} />
       </Routes>
       <Footer/>
     </>
