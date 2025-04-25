@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import '../../styles/form.css'
+import { FaSearch } from 'react-icons/fa';
 
 export default function Form() {
     const [searchValue, setSearchValue] = useState('');
@@ -14,6 +15,9 @@ export default function Form() {
                 value={searchValue} 
                 onChange={(e) => setSearchValue(e.target.value)}
             />
+            <div className='icon-wrapper'>
+                <FaSearch className='search-icon' />
+            </div>
         </div>
         <div className='btn-search'></div>
     </form>
