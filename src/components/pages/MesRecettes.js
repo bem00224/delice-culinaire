@@ -31,6 +31,9 @@ export default function MesRecettes() {
                                         <img src={recipe.imageSource} alt={recipe.title} />
                                     </div>
                                 </Link>
+                                <div className='recette-card-detail'>
+                                    <h3>{recipe.title}</h3>
+                                </div>
                             </div>
                         </div>
                     ) )
