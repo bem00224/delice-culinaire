@@ -8,12 +8,14 @@ import CategoryDetails from './components/pages/sectionsDetails/CategoryDetails'
 import CategoryDetailsRecipe from './components/pages/sectionsDetails/CategoryDetailsRecipe';
 import MesRecettes from './components/pages/MesRecettes';
 import { ToastContainer } from 'react-toastify';
+import ScrollToTop from './components/reusable-ui/ScrollToTop';
 
 function App() {
   return (
     <>
       <Navbar/>
       <ToastContainer position='top-right' autoClose={3000} />
+      <ScrollToTop/>
       <Routes>
         <Route path='/' element={<Home/>} />
         <Route path='/category' element={<Category/>} />
