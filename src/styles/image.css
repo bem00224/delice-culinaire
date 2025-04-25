@@ -47,3 +47,26 @@
 .details-info-text {
     text-align: center;
 }
+
+@media (max-width: 868px) {
+    .details-info-global {
+        font-size: 1rem;
+    }
+    .details-info-icon {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 810px) {
+    .details-info {
+        display: block;
+    }
+    .details-info-global {
+        padding: 15px 20px;
+        font-size: 1.2rem;
+        margin: 30px 0;
+    }
+    .details-info-icon {
+        font-size: 1rem;
+    }
+}

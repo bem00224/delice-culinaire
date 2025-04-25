@@ -30,7 +30,7 @@ export default function CategoryDetailsRecipe() {
         <div className='category-details-bottom'>
             <Image imageSource={recipe.imageSource} title={recipe.title} cookingTime={recipe.cookingTime} preparationTime={recipe.preparationTime} />
             <div className='category-details-bottom-description'>
-                <CarnetButton  />
+                <CarnetButton  recipe={recipe}/>
                 <div className='category-details-section'>
                     <Ingredients recipe={recipe}/>
                     <Instructions recipe={recipe}/>

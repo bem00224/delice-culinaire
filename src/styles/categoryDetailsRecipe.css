@@ -1,5 +1,13 @@
-
+.category-details-recipe {
+    padding-bottom: 100px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 .category-details-section {
-    margin-left: 20px;
-    margin-top: 50px;
+    margin: 0px 100px;
+}
+
+@media (max-width: 768px) {
+    .category-details-section {
+        margin: 0px 30px;
+    }
 }

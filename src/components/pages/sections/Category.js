@@ -9,11 +9,11 @@ export default function Category() {
   return (
     <div className='category'>
       {
-        category.map(({id,slug,title,imageSource}) => (
-          <Link key={id} to={`/category/${encodeURIComponent(slug)}`}>
+        category.map(({slug,title,imageSource}) => (
+          <Link key={slug} to={`/category/${encodeURIComponent(slug)}`}>
             <div className='category-container'>
               <div className='category-detail'>
-                <img className='category-image' src={imageSource} alt={title} />
+                <img className='category-image' src={imageSource} alt={title} loading="lazy"/>
                 <h2 className='category-title'>{title}</h2>
               </div>
             </div>
