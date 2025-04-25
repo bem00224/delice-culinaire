@@ -12,6 +12,7 @@ import ScrollToTop from './components/reusable-ui/ScrollToTop';
 import CurrentNews from './components/pages/sections/CurrentNews';
 import CurrentNewsDetails from './components/pages/sectionsDetails/CurrentNewsDetails';
 import TopFood from './components/pages/sections/TopFood';
+import TopFoodDetails from './components/pages/sectionsDetails/TopFoodDetails';
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
         <Route path="/current-news" element={<CurrentNews />} />
         <Route path="/current-news/:slug" element={<CurrentNewsDetails />} />
         <Route path='/top-food' element={<TopFood/>} />
+        <Route path='/top-food/:slug' element={<TopFoodDetails/>} />
       </Routes>
       <Footer/>
     </>
