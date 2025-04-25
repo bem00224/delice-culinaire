@@ -5,8 +5,57 @@
 .recette-global h2 {
     font-size: 2rem;
     margin-bottom: 20px;
-    margin-left: 30px;
+    margin-left: 60px;
     margin-top: 10px;
+    color: rgb(255, 66, 105);;
+}
+
+.recettes-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    padding: 30px;
+    /*border: 1px solid green;*/
+    margin: 0;
+    /*height: 100vh;*/
+    align-items: center;
+    justify-content: center;
+}
+
+.recettes-container-detail {
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    margin-top: 50px;
+    grid-column: span 3;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in-up {
+    animation: fadeInUp 0.8s ease-in-out both;
+}
+
+
+.recettes-container-top {
+    text-align: center;
+    line-height: 2;
+    color: rgb(255, 66, 105);
+    font-weight: 600;
+    font-size: 1.5rem;
+    padding: 0px 20px;
+    margin: 15px;
 }
 
 .recette-card {
@@ -63,4 +112,105 @@
     color: rgb(0, 0, 0);
     font-size: 1rem;
     text-align: center;
+}
+
+.recette-card-detail .recette-card-detail-text {
+    -webkit-box-align: center;
+    align-items: center;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    cursor: pointer;
+    background-color: white;
+    color: #333;
+    border: none;
+    padding: 10px 0px;
+    cursor: pointer;
+    transition: 0.3s;
+    text-align: center;
+    margin: auto;
+}
+
+.recette-card-detail .recette-card-detail-text:hover {
+    color: #e23357;
+}
+
+.details-link {
+    margin-right: 10px;
+}
+
+.recette-card-detail-text span {
+    margin-right: 5px;
+}
+
+@media screen and (max-width: 1190px) {
+    .recettes-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    .recette-card {
+        -webkit-box-align: center;
+        align-items: center;
+        max-width: 100%;
+        opacity: 1;
+        transition: 0.8s;
+    }
+    .recette-card-description {
+        justify-content: center;
+        max-width: 100%;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 876px) {
+    .recettes-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    .recette-card {
+        margin: auto;
+        max-width: 100%;
+    }
+    .recette-card-description {
+        justify-content: center;
+        max-width: 100%;
+        margin: auto;
+    }
+    .recettes-container-top {
+        text-align: center;
+        line-height: 2;
+        font-size: 1rem;
+        padding: 0px ;
+        margin: 15px;
+        
+    }
+}
+
+@media screen and (max-width: 786px) {
+    .recette-global h2 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+        margin-left: 0px;
+        margin-top: 0px;
+        text-align: center;
+    }
+    .recettes-container {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 40px;
+    }
+    .recette-card {
+        margin: auto;
+    }
+    .recette-card-description {
+        justify-content: center;
+        max-width: 100%;
+        margin: auto;
+    }
+    .recettes-container-top {
+        text-align: center;
+        line-height: 2;
+        font-size: 15px;
+        padding: 0px ;
+        margin: 15px;
+    }
 }
