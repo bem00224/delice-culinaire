@@ -57,7 +57,7 @@
     }
 }
 
-@media (max-width: 720px) {
+@media (max-width: 810px) {
     .details-info {
         display: block;
     }
