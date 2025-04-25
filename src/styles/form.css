@@ -39,3 +39,27 @@
     color: rgb(255, 66, 105);
     vertical-align: -0.125em;
 }
+
+.btn-search {
+    display: block;
+}
+
+.button-search {
+    padding: 14px 24px 10px 20px;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    height: 50px;
+    border-radius: 0px 25px 25px 0px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.2rem;
+    background-color: rgb(255, 66, 105);
+    transition: 1s;
+}
+
+@media screen and (max-width: 934px) {
+    .formulaire {
+        padding-bottom: 10px;
+    }
+}
