@@ -1,5 +1,5 @@
-//import im1 from '../assets/soup.jpg'
-//import im2 from '../assets/tomato.jpg'
+import im1 from '../assets/soup.webp'
+import im2 from '../assets/tomato.webp'
 import im3 from '../assets/chocolate.webp'
 //import tarte from '../assets/tarte.jpg'
 import saumon from '../assets/saumon.webp'
@@ -849,5 +849,94 @@ export const fakeData = {
           exampleRecipe: "Feuilletés au fromage et herbes",
           isFeatured: false,
         }
-      ],
+    ],
+    CurrentNews: [
+      {
+        id: 1,
+        imageSource: im1,
+        title: 'Velouté de patates douces au curry',
+        slug: 'veloute_patates_douces_curry',
+        preparationTime: 10,
+        cookingTime: 30,
+        ingredients: [
+          { name: 'Huile', quantity: 1, unit: 'CS' },
+          { name: 'Oignon', quantity: 1 },
+          { name: 'Gingembre frais râpé', quantity: 1, unit: 'CS' },
+          { name: 'Curry en poudre', quantity: 1, unit: 'CS' },
+          { name: 'Coriandre fraîche ciselée', quantity: 1, unit: 'petite poignée' },
+          { name: 'Ail', quantity: 2, unit: 'gousses' },
+          { name: 'Patate douce', quantity: 1000, unit: 'g' },
+          { name: 'Bouillon de volaille', quantity: 1000, unit: 'ml' },
+          { name: 'Lait de coco', quantity: 200, unit: 'ml' },
+        ],
+        instructions: [
+          "1. Faire revenir l'oignon quelques minutes dans l'huile.",
+          "2. Ajouter l'ail, le gingembre et la poudre de curry. Remuer.",
+          "3. Mettre les morceaux de patates douces dans ce mélange.",
+          "4. Verser le bouillon.",
+          "5. Porter à ébullition puis laisser mijoter à couvert pendant 20 à 30 min.",
+          "6. Enlever la casserole du feu.",
+          "7. Laisser un peu refroidir.",
+          "8. Mixer.",
+          "9. Remettre sur le feu.",
+          "10. Ajouter le lait de coco et la coriandre (en garder un peu pour la déco)."
+        ],
+      },
+      {
+        id: 2,
+        imageSource: im2,
+        title: 'Cocos de Paimpol à la tomate',
+        slug: 'cocos_paimpol_tomate',
+        preparationTime: 15,
+        cookingTime: 45,
+        ingredients: [
+          { name: 'Haricots coco de Paimpol écossés', quantity: 500, unit: 'g' },
+          { name: 'Huile d’olive', quantity: 2, unit: 'CS' },
+          { name: 'Oignon', quantity: 1 },
+          { name: 'Ail', quantity: 2, unit: 'gousses' },
+          { name: 'Tomates', quantity: 2 },
+          { name: 'Céleri branche', quantity: 1, unit: 'brin' },
+          { name: 'Curcuma', quantity: 1, unit: 'pincée' },
+          { name: 'Thym', quantity: 3, unit: 'brins' },
+          { name: 'Laurier', quantity: 2, unit: 'feuilles' },
+          { name: 'Eau', quantity: 700, unit: 'ml' },
+          { name: 'Sel', quantity: 1, unit: 'pincée' }
+        ],
+        instructions: [
+          '1. Écossez les haricots, rincez et égouttez-les.',
+          '2. Pelez l’oignon et l’ail, coupez-les en dés. Pelez et coupez les tomates.',
+          '3. Coupez le céleri, préparez le thym et le laurier.',
+          '4. Chauffez l’huile d’olive dans une cocotte, ajoutez ail, oignon et céleri.',
+          '5. Laissez cuire 5 min en remuant, ajoutez tomates, thym, laurier, curcuma.',
+          '6. Compotez légèrement 5 min.',
+          '7. Ajoutez les cocos, puis l’eau.',
+          '8. Portez à ébullition, laissez cuire 30 min à frémissement.',
+          '9. Salez, puis laissez cuire 10 min de plus.'
+        ],
+      },
+      {
+        id: 3,
+        imageSource: im3,
+        title: 'Mousse au chocolat',
+        slug: 'mousse_chocolat',
+        preparationTime: 20,
+        cookingTime: 0,
+        ingredients: [
+          { name: 'Chocolat noir', quantity: 200, unit: 'g' },
+          { name: 'Œufs', quantity: 6 },
+          { name: 'Sel', quantity: 1, unit: 'pincée' },
+          { name: 'Copeaux de chocolat (facultatif)', quantity: 1, unit: 'peu' },
+        ],
+        instructions: [
+          '1. Séparer les blancs des jaunes d’œufs.',
+          '2. Faire fondre le chocolat au bain-marie.',
+          '3. Ajouter les jaunes au chocolat fondu, bien mélanger.',
+          '4. Battre les blancs en neige avec le sel.',
+          '5. Incorporer les blancs au mélange chocolaté sans casser les blancs.',
+          '6. Répartir la mousse dans des verrines.',
+          '7. Réfrigérer au moins 3 heures.',
+          '8. Décorer avec des copeaux de chocolat (optionnel).'
+        ],
+      }
+    ],
 };
