@@ -7,7 +7,7 @@ export default function Image({ imageSource, title, preparationTime, cookingTime
   return (
     <div className='category-details-recipe-bottom'>
         <div className='category-details-recipe-bottom-image'>
-            <img src={imageSource} alt={title} className="details-image" />
+            <img src={imageSource} alt={title} className="details-image" loading="lazy"/>
         </div>
         <div className="details-info">
             <p className='details-info-global'>
