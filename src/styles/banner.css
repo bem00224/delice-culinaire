@@ -1,0 +1,36 @@
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    width: 100%;
+    background-image: url(/src/assets/meat-steak.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px;
+    gap: 50px;
+    height: 40vh;
+}
+
+.banner-content {
+    display: flex;
+    gap: 50px;
+    width: 70%;
+    background-color: #fff;
+    -webkit-box-align: center;
+    align-items: center;
+    opacity: 0.9;
+    margin: auto;
+    padding: 50px;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 891px) {
+    .banner-content {
+        padding: 0px;
+        background-color: transparent;
+        -webkit-box-flex: 1;
+        flex-grow: 1;
+    }
+}
