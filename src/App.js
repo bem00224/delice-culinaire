@@ -10,6 +10,7 @@ import MesRecettes from './components/pages/MesRecettes';
 import { ToastContainer } from 'react-toastify';
 import ScrollToTop from './components/reusable-ui/ScrollToTop';
 import CurrentNews from './components/pages/sections/CurrentNews';
+import CurrentNewsDetails from './components/pages/sectionsDetails/CurrentNewsDetails';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <Route path='/recipe-detail/:slug' element={<CategoryDetailsRecipe/>} />
         <Route path="/mes-recettes" element={<MesRecettes />} />
         <Route path="/current-news" element={<CurrentNews />} />
+        <Route path="/current-news/:slug" element={<CurrentNewsDetails />} />
       </Routes>
       <Footer/>
     </>
