@@ -21,6 +21,6 @@ export default function CategoryDetailsRecipe() {
     
     
   return (
-    <RecipeDetailsLayout recipe={recipe}  basePath="category"/>
+    <RecipeDetailsLayout recipe={recipe}  basePath="recipe-detail"/>
   )
 }
