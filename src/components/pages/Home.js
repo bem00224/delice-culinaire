@@ -5,6 +5,7 @@ import Banner from './sections/Banner'
 import CurrentNews from './sections/CurrentNews'
 import TopFood from './sections/TopFood'
 import Recipes from './sections/Recipes'
+import SpecialRecipes from './sections/SpecialRecipes'
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
         <CurrentNews/>
         <TopFood/>
         <Recipes/>
+        <SpecialRecipes />
     </div>
   )
 }
