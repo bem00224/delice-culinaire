@@ -16,6 +16,7 @@ import TopFoodDetails from './components/pages/sectionsDetails/TopFoodDetails';
 import Recipes from './components/pages/sections/Recipes';
 import RecipesDetails from './components/pages/sectionsDetails/RecipesDetails';
 import { SavedRecipesProvider } from './context/SavedRecipesContext';
+import ScrollToTopButton from './components/pages/ScrollToTopButton';
 
 function App() {
   return (
@@ -36,6 +37,7 @@ function App() {
         <Route path='/recipes' element={<Recipes/>} />
         <Route path='/recipes/:slug' element={<RecipesDetails/>} />
       </Routes>
+      <ScrollToTopButton />
       <Footer/>
     </SavedRecipesProvider>
   );
