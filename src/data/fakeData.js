@@ -32,6 +32,14 @@ import Soupecourgettecurry from '../assets/Soupe-courgette-curry.webp'
 import Courgettesviandehachée from '../assets/Courgettes-viande-hachée.webp'
 import Terrine from '../assets/Terrine.webp'
 import Verrines from '../assets/Verrines.webp'
+import courge from '../assets/courge.webp'
+import tomate from '../assets/tomate.webp'
+import viande from '../assets/viande.webp'
+import gourde from '../assets/gourde.webp'
+import ratatouille from '../assets/ratatouille.webp'
+import appetit from '../assets/appetit.webp'
+import lemonade from '../assets/lemonade.webp'
+import melon from '../assets/melon.webp'
 
 export const fakeData = {
     Category : [
@@ -938,6 +946,160 @@ export const fakeData = {
           '8. Décorer avec des copeaux de chocolat (optionnel).'
         ],
       }
+    ],
+    News : [
+      {
+        id: 1,
+        imageSource: courge,
+        title: "Comment conserver les courgettes ? ",
+        slug: 'Comment_conserver_les_courgettes',
+        astuce: [
+          { name: "Astuce n°1 : choisir des courgettes de petite taille"},
+          { name: "Astuce n°2 : bien conserver les courgettes" },
+          { name: "Astuce n°3 : ne pas trop cuire les courgettes"},
+          { name: "Astuce n°4 : utiliser les épices après cuisson"},
+        ],
+        instructions: [
+          "1. En fonction de la taille, le goût change drastiquement. Les grosses courgettes ont en effet tendance à être plus farineuses et possèdent souvent plus de pépins ou de fibres, qui rendent les légumes plus amers. Pour des recettes réussies, il est donc préférable de choisir des courgettes de petite taille. Elles se gardent mieux à la cuisson, se digèrent facilement et leur chair est surtout plus savoureuse. Choisissez-les lourdes car c’est un signe de grande fraîcheur !.",
+          "2. Il suffit de les garder dans un endroit sec et à l'abri de la lumière comme par exemple dans la cave ou dans le garage. Ainsi, vos courgettes pourront se conserver facilement une semaine !",
+          "3. Le temps de cuisson des courgettes est crucial pour préserver leurs qualités nutritionnelles. Une cuisson trop longue risque de les rendre molles et d’éliminer une partie de leurs vitamines et minéraux. Préférez une cuisson à la vapeur ou à l’étouffée pour les garder croquantes et pleines de saveurs. Prenez l'habitude ne pas dépasser les 8 à 10 minutes de cuisson si vous utilisez une poêle. Commencez par une cuisson à feu vif pour créer une couche croustillante sur les légumes puis baisser le feu pour cuire à l'intérieur",
+          "4. Pour éviter que les courgettes soient sans goût comme on leur reproche souvent, il est important de bien les assaisonner. Mais attention, l’astuce pour libérer le maximum de saveur, c’est de les assaisonner seulement après la cuisson ! Il est préférable d'attendre que l'eau de cuisson se soit évaporée avant de vous lancer dans l'assaisonnement. Sel, poivre, paprika, piment d'Espelette ou même curry, laissez libre cours à votre imagination!",
+        ],
+      },
+      {
+        id: 2,
+        imageSource: tomate,
+        title: "Comment conserver les tomates?",
+        slug: 'Comment_conserver_les_tomates',
+        astuce: [
+          { name: "Astuce n°1 : Ne pas placer les tomates au frigo"},
+          { name: "Astuce n°2 : Comment bien conserver les tomates ?" },
+          { name: "Astuce n°3 : Utilisation d'un sac en papier"},
+          { name: "Astuce n°4 : Lavage au moment de la consommation"},
+          { name: "Astuce n°5 : Conservation des tomates mûres"},
+        ],
+        instructions: [
+          "1. Pour prolonger leur fraîcheur, nous avons tendance à les placer au frigo. Le problème est que le froid casse les saveurs de la tomate. Plus elle reste au froid, moins elle a de goût.",
+          "2. Il faut plutôt les conserver dans un endroit sec, à l’abri de la lumière. La température ambiante leur permet de mûrir doucement et de garder toute leur saveur.",
+          "3. Une astuce simple et efficace consiste à placer les tomates dans un sac en papier et d’y ajouter une pomme. La pomme, en murissant, émet du gaz éthylène, ce qui accélère le murissement des tomates.",
+          "4. Il est préférable de laver les tomates uniquement au moment où vous allez les consommer. En effet, en les lavant trop tôt, elles deviennent humides et peuvent développer des moisissures.",
+          "5. Pour les tomates déjà mûres, il est possible de les conserver dans un récipient hermétique avec un couvercle au réfrigérateur. Pensez à les sortir quelques heures avant consommation pour qu’elles retrouvent leur saveur.",
+        ],
+      },
+      {
+        id: 3,
+        imageSource: viande,
+        title: "Faut-il décongeler sa viande avant de la cuire ?",
+        slug: 'Faut_il_decongeler_sa_viande_avant_de_la_cuire',
+        astuce: [
+          { name: "Astuce n°1 : Pourquoi faut-il la décongeler avant ?"},
+          { name: "Astuce n°2 : Perte de jus et de saveur" },
+        ],
+        instructions: [
+          "1. Il est important de prendre le temps de décongeler sa viande, avant cuisson, pour plusieurs raisons. En premier lieu, une viande congelée va prendre bien plus de temps à cuire et risque d'être mal cuite à l'intérieur. Si vous mettez une escalope de poulet congelée dans la poêle et que vous la retournez, vous risquez de cuire uniquement l'extérieur et vous retrouver avec une chair crue ou encore froide. De plus, le risque de contamination par les bactéries qu'elle contient est plus élevé.",
+          "2. Cuire la viande lorsqu'elle est encore congelée peut provoquer une perte plus importante des jus naturels de la viande. Cela peut rendre la viande plus sèche et diminuer sa saveur.",
+        ],
+      },
+      {
+        id: 4,
+        imageSource: gourde,
+        title: "Mauvaises odeurs dans une gourde, comment s'en débarrasser?",
+        slug: 'Faut_il_decongeler_sa_viande_avant_de_la_cuire',
+        astuce: [
+          { name: "Astuce n°1 : Pourquoi est-il important de nettoyer sa gourde et à quelle fréquence faut-il le faire ?"},
+          { name: "Astuce n°2 : Comment nettoyer sa gourde efficacement ?" },
+        ],
+        instructions: [
+          "1. L'absence d'un nettoyage régulier de la gourde peut être nuisible à la santé, car les restes de boissons et les bactéries créent un environnement propice à la prolifération de germes et de moisissures, responsables des mauvaises odeurs. Consommer des liquides d'une gourde mal entretenue peut causer des troubles gastro-intestinaux et affecter le goût des boissons. Pour maintenir la gourde en bon état, il est conseillé de la laver tous les jours, de préférence après chaque utilisation, et de s'assurer qu'elle soit complètement sèche avant de la remplir à nouveau.",
+          "2. Démontez la gourde, en enlevant le bouchon, le bec verseur, et tout autre élément amovible.",
+          "3. Faites un prélavage avec de l'eau chaude et du savon en frottant l'intérieur et l'extérieur de la gourde et de ses pièces démontées avec une brosse ou une éponge.",
+          "4. Pour éliminer les odeurs tenaces, remplissez la gourde d'eau chaude avec du vinaigre blanc, du bicarbonate de soude, du jus de citron ou quelques gouttes d'huile essentielle, et laissez agir quelques heures avant de rincer.",
+          "5. Rincez la gourde à l'eau claire pour enlever les résidus de savon et des solutions odorantes.",
+          "4. Laissez toutes les parties de la gourde sécher complètement à l'air libre ou avec un chiffon propre, en portant une attention particulière aux joints et aux zones difficiles à atteindre pour éviter la croissance de moisissures.",
+        ],
+      },
+      {
+        id: 5,
+        imageSource: ratatouille,
+        title: "Astuces efficaces pour éviter que la ratatouille soit trop liquide",
+        slug: 'Astuces_efficaces_pour_éviter_que_la_ratatouille_soit_trop_liquide',
+        astuce: [
+          { name: "Astuce n°1 : Cuire les légumes en plusieurs temps"},
+          { name: "Astuce n°2 : Faire dégorger les légumes" },
+        ],
+        instructions: [
+          "1. Pour préparer une ratatouille savoureuse sans que les légumes ne deviennent de la bouillie ou rendent trop d'eau, il est recommandé de les cuire séparément. Dans une poêle avec de l'huile d'olive, cuisez chaque type de légume jusqu'à ce qu'il atteigne la consistance désirée et que son eau se soit évaporée. Si nécessaire, égouttez-les après cuisson. Une fois que tous les légumes sont cuits individuellement, combinez-les dans la poêle. Ajoutez un peu d'huile d'olive, des herbes de Provence, du sel, et du poivre, puis faites cuire ensemble pendant quelques minutes. Cela vous permettra d'obtenir une ratatouille aux textures idéales et pleine de saveurs.",
+          "2. Pour prévenir l’excès d’eau dans la ratatouille provenant des légumes, il est astucieux de les faire dégorger. Après les avoir coupés, placez-les dans une passoire, saupoudrez-les de sel, et laissez-les reposer pendant au moins 30 minutes. Ensuite, utilisez du papier absorbant pour les essuyer. Il est judicieux de commencer par les légumes qui requièrent une cuisson plus longue comme l’aubergine, tandis que d'autres dégorgent. Pour les tomates, qui contiennent beaucoup d'eau, retirez les pépins avant de les ajouter à la ratatouille.",
+        ],
+      },
+      {
+        id: 6,
+        imageSource: appetit,
+        title: "Pourquoi a-t-on moins d'appétit quand il fait chaud ?",
+        slug: 'Pourquoi_a_t_on_moins_d_appétit_quand_il_fait_chaud',
+        astuce: [
+          { name: "Astuce n°1 : Pourquoi la chaleur diminue l’appétit en été ?"},
+          { name: "Astuce n°2 : Que faire pour bien s’alimenter en été ?" },
+        ],
+        instructions: [
+          "1. Durant les fortes chaleurs, le corps humain a tendance à être plus inactif et à conserver son énergie, car les activités et l’agitation peuvent augmenter la sensation de chaleur. En été, le corps n’a pas besoin de dépenser beaucoup d'énergie pour maintenir sa température interne, contrairement à l'winter où il lutte pour se réchauffer. De ce fait, les besoins énergétiques diminuent et, par un mécanisme d'auto-régulation, l'appétit se réduit naturellement, ce qui rend les repas copieux moins attrayants. Ce phénomène est particulièrement notable chez les enfants, qui ont tendance à être moins actifs et donc à ressentir moins la faim lorsque les températures sont élevées.",
+          "2. Pour assurer un régime alimentaire équilibré sans carences pendant les jours chauds, optez pour des repas froids et rafraîchissants. Les salades variées, les crudités et les sandwichs froids sont d'excellentes options pour toute la famille. Pour satisfaire les enfants ou les amateurs de sucreries, envisagez des desserts glacés, comme la glace au yaourt et aux framboises fait maison.En outre, il est crucial de ne pas négliger l'hydratation. Consommer suffisamment d'eau est essentiel, surtout pendant les périodes de chaleur.",
+        ],
+      },
+      {
+        id: 7,
+        imageSource: lemonade,
+        title: "L'eau citronnée : un trésor pour votre santé",
+        slug: 'eau_citronnée_un_trésor_pour_votre_sante',
+        astuce: [
+          { name: "Astuce n°1 : L’eau citronnée favorise l’hydratation"},
+          { name: "Astuce n°2 : L’eau citronnée est une bonne source de vitamine C" },
+          { name: "Astuce n°3 : L’eau citronnée peut favoriser la perte de poids"},
+          { name: "Astuce n°4 : L’eau citronnée peut aider à la digestion"},
+          { name: "Astuce n°5 : L’eau citronnée purifie et détoxifie l’organisme"},
+          { name: "Astuce n°6 : avec du curcuma"},
+        ],
+        instructions: [
+          "1. L'eau citronnée est un moyen délicieux et rafraîchissant pour augmenter votre apport en eau et assurer une hydratation optimale de votre corps. L'ajout de jus de citron à votre eau pour en rehausser le goût peut vous inciter à boire plus. Elle fournit à votre corps le liquide essentiel ainsi que des minéraux tels que le potassium, le calcium, le magnésium, et des éléments comme le fer et la vitamine A.",
+          "2. Les fruits citriques comme le citron sont riches en vitamine C, un antioxydant qui protège les cellules contre les radicaux libres. L'eau citronnée possède des propriétés antibactériennes et anti-inflammatoires et renforce le système immunitaire.",
+          "3. Le jus de citron peut aider à la perte de poids grâce à ses multiples propriétés, notamment en aidant à la détoxification du corps et en favorisant la digestion. Plusieurs études ont démontré que boire de l'eau citronnée avant les repas peut être une stratégie efficace pour la perte de poids.",
+          "4. Consommer de l'eau citronnée avant les repas peut stimuler et améliorer la digestion. Des recherches ont révélé que l'acide citrique dans le jus de citron stimule la production d'acide gastrique, un liquide digestif sécrété dans l'estomac qui aide le corps à décomposer et à digérer plus efficacement les aliments.",
+          "5. L'eau citronnée aide à maintenir l'équilibre acido-basique, c'est-à-dire à réguler le pH de notre corps. Cela signifie que si vous avez consommé une grande quantité de viande ou d'autres aliments acides récemment, l'eau citronnée peut vous aider à rétablir l'équilibre acido-basique de votre corps. Elle a un léger effet diurétique qui favorise l'élimination des substances toxiques via l'urine.",
+          "6. Ajoutez à votre jus de citron chaud ½ cuiller à café de curcuma en poudre puis dégustez..",
+        ],
+      },
+      {
+        id: 8,
+        imageSource: melon,
+        title: "Comment cuisiner un melon fade et sans goût?",
+        slug: 'comment_cuisiner_un_melon_fade_et_sans_gout',
+        astuce: [
+          { name: "Votre melon est fade ou sans goût ?"},
+          { name: "Astuce n°1 : Salade de melon et jambon de Parme"},
+          { name: "Astuce n°2 : 2. Smoothie au melon" },
+          { name: "Astuce n°3 : Sorbet au melon"},
+          { name: "Astuce n°4 : Gaspacho de melon"},
+          { name: "Astuce n°5 : Brochettes de fruits"},
+          { name: "Astuce n°6 : Salade de melon et feta" },
+          { name: "Astuce n°7 : Melon grillé"},
+          { name: "Astuce n°8 : Salsa de melon"},
+          { name: "Astuce n°9 : Infusion d'eau au melon"},
+          { name: "Astuce n°10 : Confiture de melon"},
+        ],
+        instructions: [
+          "Pas la peine de le jeter ! Voici des astuces simples et gourmandes pour lui redonner du peps et tout un tas de saveurs !",
+          "1. Découpez le melon en morceaux et servez-le avec du jambon de Parme. La combinaison de la douceur du melon et de la salinité du jambon peut améliorer le goût du melon.",
+          "2. Mélangez le melon avec d'autres fruits (comme des fraises, des bananes ou des pêches), du yaourt, et un peu de miel ou de sirop d'érable pour ajouter de la douceur.",
+          "3. Réduisez le melon en purée avec un peu de jus de citron, de sucre et d'eau. Congelez le mélange, en remuant de temps en temps pour casser les cristaux de glace, jusqu'à ce qu'il soit ferme.",
+          "4. Créez une variation rafraîchissante du gaspacho traditionnel en utilisant du melon, des concombres, de l'huile d'olive, du vinaigre et des herbes.",
+          "5. Utilisez le melon comme ingrédient dans des brochettes de fruits. Mélangez-le avec d'autres fruits et arrosez de jus de citron ou de lime, et un peu de miel.",
+          "6. Combiner le melon avec de la feta émiettée, de la menthe fraîche, du jus de citron et un filet d'huile d'olive. La feta ajoutera du sel qui peut aider à rehausser la saveur du melon.",
+          "7. Coupez le melon en tranches épaisses et grillez-le rapidement de chaque côté. Cela peut caraméliser certains des sucres naturels et ajouter de la profondeur de saveur.",
+          "8. Faites une salsa avec du melon, de la tomate, de l'oignon, du jus de citron vert, de la coriandre et des piments. Servez avec des chips ou comme garniture pour des tacos ou du poisson grillé.",
+          "9. Ajoutez des morceaux de melon dans une carafe d'eau avec des tranches de citron, de concombre et des feuilles de menthe pour une eau aromatisée.",
+          "10. Faites une confiture en mélangeant le melon avec du sucre et du jus de citron, puis en le cuisant à feu doux jusqu'à ce qu'il épaississe.",
+        ],
+      },
     ],
     TopFood : [
       {
