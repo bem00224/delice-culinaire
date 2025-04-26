@@ -15,10 +15,11 @@ import TopFood from './components/pages/sections/TopFood';
 import TopFoodDetails from './components/pages/sectionsDetails/TopFoodDetails';
 import Recipes from './components/pages/sections/Recipes';
 import RecipesDetails from './components/pages/sectionsDetails/RecipesDetails';
+import { SavedRecipesProvider } from './context/SavedRecipesContext';
 
 function App() {
   return (
-    <>
+    <SavedRecipesProvider>
       <Navbar/>
       <ToastContainer position='top-right' autoClose={3000} />
       <ScrollToTop/>
@@ -36,7 +37,7 @@ function App() {
         <Route path='/recipes/:slug' element={<RecipesDetails/>} />
       </Routes>
       <Footer/>
-    </>
+    </SavedRecipesProvider>
   );
 }
 
