@@ -4,6 +4,6 @@ import { fakeData } from '../../../data/fakeData'
 
 export default function TopFood() {
   return (
-    <Menu title="Top recettes" data={fakeData.TopFood} basePath='/top-food'/>
+    <Menu title="Top recettes" data={fakeData.TopFood} basePath='/top-food' withHeart={true}/>
   )
 }

@@ -2,7 +2,7 @@ import React from 'react'
 import Cards from '../reusable-ui/Cards'
 import '../../styles/menu.css'
 
-export default function Menu({ title,data , basePath=''}) {
+export default function Menu({ title,data , basePath='', withHeart}) {
   return (
     <div className='menu'>
         <div className='menu-title'>
@@ -16,6 +16,7 @@ export default function Menu({ title,data , basePath=''}) {
                         to={`${basePath}/${slug}`}
                         title={title}
                         image={imageSource}
+                        withHeart={withHeart}
                     />
                 ) )}
             </div>
