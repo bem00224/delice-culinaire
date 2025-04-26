@@ -13,6 +13,8 @@ import CurrentNews from './components/pages/sections/CurrentNews';
 import CurrentNewsDetails from './components/pages/sectionsDetails/CurrentNewsDetails';
 import TopFood from './components/pages/sections/TopFood';
 import TopFoodDetails from './components/pages/sectionsDetails/TopFoodDetails';
+import Recipes from './components/pages/sections/Recipes';
+import RecipesDetails from './components/pages/sectionsDetails/RecipesDetails';
 
 function App() {
   return (
@@ -30,6 +32,8 @@ function App() {
         <Route path="/current-news/:slug" element={<CurrentNewsDetails />} />
         <Route path='/top-food' element={<TopFood/>} />
         <Route path='/top-food/:slug' element={<TopFoodDetails/>} />
+        <Route path='/recipes' element={<Recipes/>} />
+        <Route path='/recipes/:slug' element={<RecipesDetails/>} />
       </Routes>
       <Footer/>
     </>
