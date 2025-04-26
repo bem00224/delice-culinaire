@@ -7,12 +7,12 @@ import dessert from '../assets/desser.webp'
 import brioche from "../assets/Brioche.webp"
 import chouquettes from "../assets/Chouquettes.webp"
 import cookies from "../assets/cookies.webp"
-/*import Sirop from "../assets/Sirop.webp"
+import Sirop from "../assets/Sirop.webp"
 import tisane from "../assets/tisane.webp"
 import chips from "../assets/chips.webp"
 import Gommage from "../assets/Gommage.webp"
 import Bouillon from "../assets/Bouillon.webp"
-import Hachi from "../assets/Hachi.webp"*/
+import Hachi from "../assets/Hachi.webp"
 import rapide from "../assets/rapides.jpg"
 import entrées from "../assets/entrées.png"
 import plats from "../assets/plats.png"
@@ -1091,4 +1091,131 @@ export const fakeData = {
         ],
       }
     ],
+    SpecialRecipes : [
+      {
+        id: 1,
+        imageSource: Sirop,
+        title: "Sirop de queues de fraises",
+        slug: 'fraise',
+        preparationTime: 10,
+        cookingTime: 20,
+        ingredients: [
+          { name: "Queues de fraises", quantity: 200, unit: "g" },
+          { name: "Eau", quantity: 500, unit: "ml" },
+          { name: "Sucre", quantity: 150, unit: "g" },
+          { name: "Jus de citron", quantity: 1, unit: "CS" },
+        ],
+        instructions: [
+          "1. Rincer les queues de fraises.",
+          "2. Les mettre dans une casserole avec l’eau et porter à ébullition.",
+          "3. Laisser mijoter 15-20 min.",
+          "4. Filtrer le mélange.",
+          "5. Ajouter le sucre et le jus de citron.",
+          "6. Porter de nouveau à ébullition pour épaissir légèrement.",
+          "7. Verser dans une bouteille stérilisée."
+        ],
+      },
+      {
+        id: 2,
+        imageSource: tisane,
+        title: "Tisane de queues de cerises",
+        slug: 'cerise',
+        preparationTime: 5,
+        cookingTime: 10,
+        ingredients: [
+          { name: "Queues de cerises séchées", quantity: 2, unit: "CS" },
+          { name: "Eau", quantity: 500, unit: "ml" }
+        ],
+        instructions: [
+          "1. Faire bouillir l’eau.",
+          "2. Ajouter les queues de cerises et laisser infuser 10 min.",
+          "3. Filtrer et déguster chaud ou froid."
+        ],
+      },
+      {
+        id: 3,
+        imageSource: chips,
+        title: "Chips d'épluchures de pomme",
+        slug: 'epluchures-pomme',
+        preparationTime: 5,
+        cookingTime: 25,
+        ingredients: [
+          { name: "Épluchures de pommes", quantity: 2, unit: "pommes" },
+          { name: "Cannelle", quantity: 1, unit: "pincée" },
+          { name: "Sucre", quantity: 1, unit: "CS" },
+          { name: "Huile", quantity: 1, unit: "CS" }
+        ],
+        instructions: [
+          "1. Préchauffer le four à 150°C.",
+          "2. Mélanger les épluchures avec sucre, cannelle et huile.",
+          "3. Étaler sur une plaque et enfourner 20-25 min en retournant à mi-cuisson.",
+          "4. Laisser refroidir pour que ça croustille."
+        ],
+      },
+      {
+        id: 4,
+        imageSource: Gommage,
+        title: "Gommage pour le corps au marc de café",
+        slug: 'marc-cafe',
+        preparationTime: 5,
+        cookingTime: 0,
+        ingredients: [
+          { name: "Marc de café", quantity: 2, unit: "CS" },
+          { name: "Huile de coco", quantity: 1, unit: "CS" },
+          { name: "Sucre", quantity: 1, unit: "CS" }
+        ],
+        instructions: [
+          "1. Mélanger tous les ingrédients jusqu’à obtenir une pâte homogène.",
+          "2. Appliquer sur peau humide en massant en mouvements circulaires.",
+          "3. Rincer à l’eau tiède."
+        ],
+      },
+      {
+        id: 5,
+        imageSource: Bouillon,
+        title: "Bouillon de légumes avec épluchures",
+        slug: 'bouillon-epeluchures',
+        preparationTime: 10,
+        cookingTime: 45,
+        ingredients: [
+          { name: "Épluchures de légumes (carottes, poireaux, etc.)", quantity: 500, unit: "g" },
+          { name: "Eau", quantity: 1, unit: "L" },
+          { name: "Ail", quantity: 2, unit: "gousses" },
+          { name: "Thym", quantity: 2, unit: "brins" },
+          { name: "Laurier", quantity: 1, unit: "feuille" },
+          { name: "Sel", quantity: 1, unit: "pincée" },
+          { name: "Poivre", quantity: 1, unit: "pincée" }
+        ],
+        instructions: [
+          "1. Mettre les épluchures lavées dans une grande casserole.",
+          "2. Ajouter l’eau, les herbes et les épices.",
+          "3. Porter à ébullition puis mijoter à feu doux 45 min.",
+          "4. Filtrer et conserver au frais."
+        ],
+      },
+      {
+        id: 6,
+        imageSource: Hachi,
+        title: "Hachis parmentier avec restes de pot-au-feu",
+        slug: 'hachi_parmentier_pot_au_feu',
+        preparationTime: 20,
+        cookingTime: 30,
+        ingredients: [
+          { name: "Restes de viande de pot-au-feu", quantity: 300, unit: "g" },
+          { name: "Pommes de terre", quantity: 600, unit: "g" },
+          { name: "Lait", quantity: 100, unit: "ml" },
+          { name: "Beurre", quantity: 30, unit: "g" },
+          { name: "Oignon", quantity: 1 },
+          { name: "Sel", quantity: 1, unit: "pincée" },
+          { name: "Poivre", quantity: 1, unit: "pincée" }
+        ],
+        instructions: [
+          "1. Éplucher et cuire les pommes de terre pour faire une purée avec lait, beurre, sel, poivre.",
+          "2. Émincer l’oignon et le faire revenir.",
+          "3. Ajouter la viande effilochée aux oignons.",
+          "4. Disposer la viande dans un plat à gratin, recouvrir de purée.",
+          "5. Enfourner à 180°C pendant 25-30 min."
+        ],
+      }
+    ]
 };
