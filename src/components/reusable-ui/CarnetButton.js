@@ -1,47 +1,40 @@
-import React, { useEffect, useState } from 'react'
-import { CiHeart } from 'react-icons/ci'
-import '../../styles/carnetButton.css'
+import React, { useEffect, useState } from 'react';
+import { CiHeart } from 'react-icons/ci';
+import '../../styles/carnetButton.css';
 import { toast } from 'react-toastify';
+import { useSavedRecipes } from '../../context/SavedRecipesContext';
 
 export default function CarnetButton({ recipe }) {
-  const [ isSaved, setIsSaved] = useState(false)
+  const { savedRecipes, saveRecipe } = useSavedRecipes();
+  const [isSaved, setIsSaved] = useState(false);
 
-  //comportements
   useEffect(() => {
-    if (!recipe || !recipe.slug) return;
-
-    const saved = JSON.parse(localStorage.getItem("savedRecipes")) || [];
-    const exists = saved.find(item => item.slug === recipe.slug);
-    if (exists) {
-        setIsSaved(true);
+    if (recipe && recipe.slug) {
+      const exists = savedRecipes.some(item => item.slug === recipe.slug);
+      setIsSaved(exists);
     }
-}, [recipe]);
+  }, [recipe, savedRecipes]);
 
-const handleSave = () => {
-    if (!recipe || !recipe.slug) {
-        toast.error("Impossible de sauvegarder cette recette.");
-        return;
-    }
-
-    const saved = JSON.parse(localStorage.getItem("savedRecipes")) || [];
-    const exists = saved.find(item => item.slug === recipe.slug);
-
-    if (exists) {
-        toast.info("Cette recette est déjà sauvegardée !");
+  const handleSave = () => {
+    if (!isSaved) {
+      saveRecipe({
+        slug: recipe.slug,
+        title: recipe.title,
+        imageSource: recipe.imageSource,
+        basePath: recipe.basePath
+      });
+      toast.success("Recette enregistrée !");
     } else {
-        const updated = [...saved, recipe];
-        localStorage.setItem("savedRecipes", JSON.stringify(updated));
-        setIsSaved(true);
-        toast.success("Recette sauvegardée !");
+      toast.info("Recette déjà enregistrée !");
     }
-};
-//affichage
+  };
+
   return (
-    <div className='carnet-details-btn-content'>
-        <button className='carnet-details-btn' onClick={handleSave}>
-            <CiHeart className='icon-heart'/> 
-            { isSaved ? "Sauvegardée":"Mon carnet"}
-        </button>
+    <div className="carnet-details-btn-content">
+      <button className="carnet-details-btn" onClick={handleSave} disabled={isSaved}>
+        <CiHeart className="icon-heart" />
+        {isSaved ? "Déjà sauvegardée" : "Mon carnet"}
+      </button>
     </div>
-  )
+  );
 }

@@ -1,18 +1,18 @@
 import im1 from '../assets/soup.webp'
 import im2 from '../assets/tomato.webp'
 import im3 from '../assets/chocolate.webp'
-//import tarte from '../assets/tarte.jpg'
+import tarte from '../assets/tarte.webp'
 import saumon from '../assets/saumon.webp'
 import dessert from '../assets/desser.webp'
 import brioche from "../assets/Brioche.webp"
 import chouquettes from "../assets/Chouquettes.webp"
 import cookies from "../assets/cookies.webp"
-/*import Sirop from "../assets/Sirop.jpg"
-import tisane from "../assets/tisane.jpg"
-import chips from "../assets/chips.jpg"
-import Gommage from "../assets/Gommage.jpg"
-import Bouillon from "../assets/Bouillon.jpg"
-import Hachi from "../assets/Hachi.jpg"*/
+/*import Sirop from "../assets/Sirop.webp"
+import tisane from "../assets/tisane.webp"
+import chips from "../assets/chips.webp"
+import Gommage from "../assets/Gommage.webp"
+import Bouillon from "../assets/Bouillon.webp"
+import Hachi from "../assets/Hachi.webp"*/
 import rapide from "../assets/rapides.jpg"
 import entrées from "../assets/entrées.png"
 import plats from "../assets/plats.png"
@@ -936,6 +936,158 @@ export const fakeData = {
           '6. Répartir la mousse dans des verrines.',
           '7. Réfrigérer au moins 3 heures.',
           '8. Décorer avec des copeaux de chocolat (optionnel).'
+        ],
+      }
+    ],
+    TopFood : [
+      {
+        id: 1,
+        imageSource: tarte,
+        title: "Tarte aux pommes",
+        slug: 'tarte_aux_pommes',
+        preparationTime: 25,
+        cookingTime: 30,
+        ingredients: [
+          { name: "Pommes", quantity: 6 },
+          { name: "Pâte brisée", quantity: 1 },
+          { name: "Sucre", quantity: 1, unit: "sachet" },
+          { name: "Beurre", quantity: 30, unit: "g" },
+          { name: "Cannelle", quantity: 1, unit: "pincée" },
+        ],
+        instructions: [
+          "1. Éplucher et découper en morceaux les pomme.",
+          "2. Faire une compote : les mettre dans une casserole avec un peu d'eau (1 verre ou 2). Bien remuer. Quand les pommes commencent à ramollir, ajouter un sachet ou un sachet et demi de sucre vanillé. Ajouter un peu d'eau si nécessaire.",
+          "3. Vous saurez si la compote est prête une fois que les pommes ne seront plus dures du tout. Ce n'est pas grave s'il reste quelques morceaux.",
+          "4. Pendant que la compote cuit, éplucher et couper en quatre les deux dernières pommes, puis, couper les quartiers en fines lamelles (elles serviront à être posées sur la compote).",
+          "5. Préchauffer le four à 210°C (thermostat 7).",
+          "6. Laisser un peu refroidir la compote et étaler la pâte brisée dans un moule et la piquer avec une fourchette.",
+          "7. Verser la compote sur la pâte et placer les lamelles de pommes en formant une spirale ou plusieurs cercles, au choix ! Disposer des lamelles de beurre dessus.",
+          "8. Mettre au four et laisser cuire pendant 30 min. Surveiller la cuisson. Vous pouvez ajouter un peu de sucre vanillé sur la tarte pendant que çà cuit pour caraméliser un peu.",
+        ],
+      },
+      {
+        id: 2,
+        imageSource: saumon,
+        title: "Saumon aux amandes",
+        slug: 'saumon_amandes',
+        preparationTime: 15,
+        cookingTime: 20,
+        ingredients: [
+          { name: "Filets de saumon", quantity: 2 },
+          { name: "Amandes effilées", quantity: 50, unit: "g" },
+          { name: "Beurre", quantity: 20, unit: "g" },
+          { name: "Citron", quantity: 1 },
+          { name: "Sel", quantity: 1, unit: "pincée" },
+          { name: "Poivre", quantity: 1, unit: "pincée" },
+        ],
+        instructions: [
+          "1. Préchauffez le four à 180°C.",
+          "2. Placez les filets de saumon dans un plat.",
+          "3. Salez, poivrez et arrosez de jus de citron.",
+          "4. Parsemez d’amandes effilées et ajoutez le beurre fondu.",
+          "5. Enfournez pour 15-20 minutes.",
+        ],
+      },
+      {
+        id: 3,
+        imageSource: dessert,
+        title: "Fondant au chocolat",
+        slug: 'fondant_chocolat',
+        preparationTime: 15,
+        cookingTime: 10,
+        ingredients: [
+          { name: "Chocolat noir", quantity: 200, unit: "g" },
+          { name: "Beurre", quantity: 100, unit: "g" },
+          { name: "Sucre", quantity: 80, unit: "g" },
+          { name: "Farine", quantity: 50, unit: "g" },
+          { name: "Œufs", quantity: 4 },
+        ],
+        instructions: [
+          "1. Préchauffez le four à 200°C.",
+          "2. Faites fondre le chocolat avec le beurre.",
+          "3. Ajoutez le sucre, la farine, puis les œufs un à un.",
+          "4. Versez dans des moules individuels beurrés.",
+          "5. Faites cuire 10 minutes.",
+          "6. Servez tiède avec une boule de glace vanille si désiré.",
+        ],
+      }
+    ],
+    Recipes : [
+      {
+        id: 1,
+        imageSource: brioche,
+        title: "Brioche au sucre",
+        slug: 'brioche_sucre',
+        preparationTime: 20,
+        cookingTime: 30,
+        ingredients: [
+          { name: 'Farine', quantity: 500, unit: 'g' },
+          { name: 'Levure boulangère', quantity: 1, unit: 'sachet' },
+          { name: 'Sucre', quantity: 80, unit: 'g' },
+          { name: 'Lait tiède', quantity: 200, unit: 'ml' },
+          { name: 'Œufs', quantity: 3 },
+          { name: 'Beurre', quantity: 100, unit: 'g' },
+          { name: 'Sucre perlé', quantity: 2, unit: 'CS' },
+        ],
+        instructions: [
+          "1. Mélanger la farine, la levure et le sucre.",
+          "2. Ajouter les œufs et le lait tiède, pétrir la pâte.",
+          "3. Incorporer le beurre mou et pétrir jusqu'à obtention d'une pâte lisse.",
+          "4. Laisser lever 1h dans un endroit chaud.",
+          "5. Dégazer la pâte, former une brioche et disposer dans un moule.",
+          "6. Laisser lever à nouveau 30 min.",
+          "7. Badigeonner de jaune d’œuf et parsemer de sucre perlé.",
+          "8. Cuire à 180°C pendant 25 à 30 min.",
+        ],
+      },
+      {
+        id: 2,
+        imageSource: chouquettes,
+        title: "Chouquettes au sucre perlé",
+        slug: 'chouquettes',
+        preparationTime: 15,
+        cookingTime: 20,
+        ingredients: [
+          { name: 'Eau', quantity: 250, unit: 'ml' },
+          { name: 'Beurre', quantity: 100, unit: 'g' },
+          { name: 'Farine', quantity: 150, unit: 'g' },
+          { name: 'Œufs', quantity: 4 },
+          { name: 'Sel', quantity: 1, unit: 'pincée' },
+          { name: 'Sucre perlé', quantity: 2, unit: 'CS' },
+        ],
+        instructions: [
+          "1. Porter l’eau, le beurre et le sel à ébullition.",
+          "2. Hors du feu, ajouter la farine d’un coup et mélanger.",
+          "3. Remettre sur feu doux et dessécher la pâte.",
+          "4. Hors du feu, incorporer les œufs un à un.",
+          "5. Former des petites boules sur une plaque.",
+          "6. Saupoudrer de sucre perlé.",
+          "7. Cuire à 200°C pendant 20 min jusqu’à ce qu’elles soient dorées.",
+        ],
+      },
+      {
+        id: 3,
+        imageSource: cookies,
+        title: "Cookies aux pépites de chocolat",
+        slug: 'cookie',
+        preparationTime: 10,
+        cookingTime: 12,
+        ingredients: [
+          { name: 'Farine', quantity: 250, unit: 'g' },
+          { name: 'Beurre mou', quantity: 125, unit: 'g' },
+          { name: 'Sucre roux', quantity: 150, unit: 'g' },
+          { name: 'Œufs', quantity: 1 },
+          { name: 'Levure chimique', quantity: 1, unit: 'cc' },
+          { name: 'Pépites de chocolat', quantity: 150, unit: 'g' },
+          { name: 'Extrait de vanille', quantity: 1, unit: 'cc' },
+        ],
+        instructions: [
+          "1. Préchauffer le four à 180°C.",
+          "2. Mélanger le beurre et le sucre.",
+          "3. Ajouter l'œuf et la vanille.",
+          "4. Incorporer la farine, la levure et les pépites de chocolat.",
+          "5. Former des petites boules sur une plaque de cuisson.",
+          "6. Cuire pendant 10 à 12 min jusqu’à ce qu’ils soient dorés.",
         ],
       }
     ],
