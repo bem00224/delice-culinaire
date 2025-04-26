@@ -18,6 +18,9 @@ import RecipesDetails from './components/pages/sectionsDetails/RecipesDetails';
 import { SavedRecipesProvider } from './context/SavedRecipesContext';
 import ScrollToTopButton from './components/pages/ScrollToTopButton';
 import SpecialRecipes from './components/pages/sections/SpecialRecipes';
+import SpecialRecipesDetails from './components/pages/sectionsDetails/SpecialRecipesDetails';
+import News from './components/pages/sections/News';
+import NewsDetails from './components/pages/sectionsDetails/NewsDetails';
 
 function App() {
   return (
@@ -38,6 +41,9 @@ function App() {
         <Route path='/recipes' element={<Recipes/>} />
         <Route path='/recipes/:slug' element={<RecipesDetails/>} />
         <Route path='/special-recipes' element={<SpecialRecipes/>} />
+        <Route path='/special-recipes/:slug' element={<SpecialRecipesDetails/>} />
+        <Route path='/news' element={<News/>} />
+        <Route path='/news/slug' element={<NewsDetails/>} />
       </Routes>
       <ScrollToTopButton />
       <Footer/>
