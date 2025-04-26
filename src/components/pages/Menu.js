@@ -17,6 +17,8 @@ export default function Menu({ title,data , basePath='', withHeart}) {
                         title={title}
                         image={imageSource}
                         withHeart={withHeart}
+                        slug={slug}
+                        basePath={basePath}
                     />
                 ) )}
             </div>
