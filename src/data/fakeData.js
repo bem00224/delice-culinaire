@@ -1,18 +1,15 @@
-import im1 from '../assets/soup.webp'
-import im2 from '../assets/tomato.webp'
-import im3 from '../assets/chocolate.webp'
-import tarte from '../assets/tarte.webp'
+import im1 from '../assets/veloute-patates-douces.jpg'
+import im2 from '../assets/haricots-blancs-sauce-tomate.jpg'
+import im3 from '../assets/mousse-chocolat.jpg'
+import tarte from '../assets/tarte-pommes.jpg'
 import saumon from '../assets/saumon.webp'
-import dessert from '../assets/desser.webp'
-import brioche from "../assets/Brioche.webp"
-import chouquettes from "../assets/Chouquettes.webp"
-import cookies from "../assets/cookies.webp"
-import Sirop from "../assets/Sirop.webp"
+import dessert from '../assets/gateau-au-chocolat2.jpeg'
+import brioche from "../assets/brioche.png"
+import chouquettes from "../assets/chouquettes.webp"
+import cookies from "../assets/cookies.jpg"
+import Sirop from "../assets/sirop-de-fraise.jpg"
 import tisane from "../assets/tisane.webp"
 import chips from "../assets/chips.webp"
-import Gommage from "../assets/Gommage.webp"
-import Bouillon from "../assets/Bouillon.webp"
-import Hachi from "../assets/Hachi.webp"
 import rapide from "../assets/rapid.svg"
 import entrées from "../assets/entre.svg"
 import plats from "../assets/plat.svg"
@@ -25,7 +22,7 @@ import bolognaise from '../assets/bolognaise.webp'
 import cabillaud from '../assets/cabillaud.webp'
 import Sauce from '../assets/Sauce.webp'
 import Papillottescumin from '../assets/Papillottes-cumin.webp'
-import Saumonamandes from '../assets/Saumon-amandes.webp'
+import Saumonamandes from '../assets/saumon-papillotte_2.jpg'
 import pouletmoutarde from '../assets/poulet-moutarde.webp'
 import lentillescorail from '../assets/lentilles-corail.webp'
 import Soupecourgettecurry from '../assets/Soupe-courgette-curry.webp'
@@ -1314,70 +1311,5 @@ export const fakeData = {
           "4. Laisser refroidir pour que ça croustille."
         ],
       },
-      {
-        id: 4,
-        imageSource: Gommage,
-        title: "Gommage pour le corps au marc de café",
-        slug: 'marc-cafe',
-        preparationTime: 5,
-        cookingTime: 0,
-        ingredients: [
-          { name: "Marc de café", quantity: 2, unit: "CS" },
-          { name: "Huile de coco", quantity: 1, unit: "CS" },
-          { name: "Sucre", quantity: 1, unit: "CS" }
-        ],
-        instructions: [
-          "1. Mélanger tous les ingrédients jusqu’à obtenir une pâte homogène.",
-          "2. Appliquer sur peau humide en massant en mouvements circulaires.",
-          "3. Rincer à l’eau tiède."
-        ],
-      },
-      {
-        id: 5,
-        imageSource: Bouillon,
-        title: "Bouillon de légumes avec épluchures",
-        slug: 'bouillon-epeluchures',
-        preparationTime: 10,
-        cookingTime: 45,
-        ingredients: [
-          { name: "Épluchures de légumes (carottes, poireaux, etc.)", quantity: 500, unit: "g" },
-          { name: "Eau", quantity: 1, unit: "L" },
-          { name: "Ail", quantity: 2, unit: "gousses" },
-          { name: "Thym", quantity: 2, unit: "brins" },
-          { name: "Laurier", quantity: 1, unit: "feuille" },
-          { name: "Sel", quantity: 1, unit: "pincée" },
-          { name: "Poivre", quantity: 1, unit: "pincée" }
-        ],
-        instructions: [
-          "1. Mettre les épluchures lavées dans une grande casserole.",
-          "2. Ajouter l’eau, les herbes et les épices.",
-          "3. Porter à ébullition puis mijoter à feu doux 45 min.",
-          "4. Filtrer et conserver au frais."
-        ],
-      },
-      {
-        id: 6,
-        imageSource: Hachi,
-        title: "Hachis parmentier avec restes de pot-au-feu",
-        slug: 'hachi_parmentier_pot_au_feu',
-        preparationTime: 20,
-        cookingTime: 30,
-        ingredients: [
-          { name: "Restes de viande de pot-au-feu", quantity: 300, unit: "g" },
-          { name: "Pommes de terre", quantity: 600, unit: "g" },
-          { name: "Lait", quantity: 100, unit: "ml" },
-          { name: "Beurre", quantity: 30, unit: "g" },
-          { name: "Oignon", quantity: 1 },
-          { name: "Sel", quantity: 1, unit: "pincée" },
-          { name: "Poivre", quantity: 1, unit: "pincée" }
-        ],
-        instructions: [
-          "1. Éplucher et cuire les pommes de terre pour faire une purée avec lait, beurre, sel, poivre.",
-          "2. Émincer l’oignon et le faire revenir.",
-          "3. Ajouter la viande effilochée aux oignons.",
-          "4. Disposer la viande dans un plat à gratin, recouvrir de purée.",
-          "5. Enfourner à 180°C pendant 25-30 min."
-        ],
-      }
     ]
 };

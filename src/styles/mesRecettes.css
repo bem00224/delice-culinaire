@@ -15,7 +15,7 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 50px;
     padding: 30px;
-    /*border: 1px solid green;*/
+    /*border: 1px solid green; Roboto*/
     margin: 0;
     /*height: 100vh;*/
     align-items: center;
@@ -56,13 +56,22 @@
     font-size: 1.5rem;
     padding: 0px 20px;
     margin: 15px;
+    color: #333;
+    font-family: "Montserrat", sans-serif;
+}
+
+.recettes-container-top p {
+    font-size: 1.8rem;
 }
 
 .recettes-container-top-link {
     color: #333;
+    font-size: 1.8rem;
+    color: rgb(255, 66, 105);
 }
 .recettes-container-top-link:hover {
-    color: rgb(255, 66, 105);
+    color: #c02a37;
+    border-bottom: 3px solid #c02a37;
 }
 
 .recette-card {
