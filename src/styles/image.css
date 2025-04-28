@@ -58,6 +58,9 @@
 }
 
 @media (max-width: 810px) {
+    .category-details-recipe-bottom {
+        width: 90%;
+    }
     .details-info {
         display: block;
     }
