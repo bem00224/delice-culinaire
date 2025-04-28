@@ -4,6 +4,7 @@
 
 .content-titleBar {
     text-align: center;
+    flex-wrap: wrap;
     margin: 70px 0px 50px;
 }
 
@@ -25,7 +26,11 @@
 }
 
 @media (max-width: 768px) {
-    
+    .details-title {
+        font-size: 1.7rem;
+        flex-wrap: wrap;
+        margin-left: 20px;
+    }
     .arrow-icon {
         position: absolute;
         top: 10px;

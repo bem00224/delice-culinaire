@@ -59,7 +59,10 @@
 
 @media (max-width: 810px) {
     .category-details-recipe-bottom {
-        width: 90%;
+        width: 86%;
+    }
+    .details-image {
+        box-shadow: none;
     }
     .details-info {
         display: block;
