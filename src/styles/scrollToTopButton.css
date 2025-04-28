@@ -4,7 +4,7 @@
     bottom: 40px;
     right: 30px;
     z-index: 1000;
-    background-color: #333;
+    background-color: rgb(255, 66, 105);
     color: #fff;
     border: none;
     border-radius: 50%;
@@ -16,6 +16,17 @@
 }
   
 .scroll-to-top:hover {
-    background-color: #555;
+    background-color: #c02a37;
+}
+
+@media screen and (max-width: 786px) {
+    .scroll-to-top {
+        position: fixed;
+        bottom: 40px;
+        right: 6px;
+        padding: 8px 8px;
+        font-size: 20px;
+        cursor: pointer;
+    }
 }
   

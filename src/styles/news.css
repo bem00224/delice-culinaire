@@ -1,0 +1,111 @@
+.news {
+    display: grid;
+    -webkit-box-pack: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 1px -1px,
+                rgba(0, 0, 0, 0.14) 0px 1px 1px 0px,
+                rgba(0, 0, 0, 0.12) 0px 1px 3px 0px;
+    color: rgba(0, 0, 0, 0.87);
+    border-radius: 10px 10px 0 0;
+    transition: box-shadow 300ms ease-in-out;
+    padding: 20px;
+    margin: 50px 100px;
+    /*overflow: hidden;*/
+}
+
+.news-title {
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.news-title-global {
+    margin-left: 9px;
+    font-weight: bold;
+    font-size: 1.17em;
+}
+
+.news-container {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.news-embla {
+    overflow: hidden;
+    width: 100%;
+}
+
+.news-embla-container {
+    display: flex;
+    gap: 20px;
+}
+
+.news-embla-slide {
+    flex: 0 0 calc(100% / 3 - 1rem);
+    min-width: 300px;/*changement possible 280px*/
+    display: flex;
+    justify-content: center;
+}
+
+/* Boutons de navigation */
+.news-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.carousel-btn {
+    background-color: rgb(255, 66, 105);
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1.2rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.carousel-btn:hover {
+    background-color: #c02a37;
+}
+
+/* Responsive tablette 1196*/
+@media screen and (max-width: 1180px) {
+    .news-embla-slide {
+        flex: 0 0 calc(100% / 2 - 1rem);
+    }
+}
+
+@media screen and (max-width: 876px) {
+    .news {
+        border: none;
+        box-shadow: none;
+        padding: 20px 0px;
+        margin: 50px 20px;
+    }
+    .news-embla-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+    .news-embla-slide {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+}
+
+/* Responsive mobile  */
+@media screen and (max-width: 686px) {
+    .news {
+        border: none;
+        box-shadow: none;
+    }
+    .news-embla-slide {
+        flex: 0 0 100%;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
