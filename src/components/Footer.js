@@ -9,7 +9,7 @@ export default function Footer() {
       <p className='footer-text'>© 2025 - Bah Elhadj Mamadou - Développeur web </p>
       <p className='me-trouver'>Retrouvez-moi sur : </p>
       <div className='social-icons'>
-          <a href='linkedin.com/in/elhadj-mamadou-bah-02676531b' target='_blank' rel="noopener noreferrer" aria-label="LinkedIn">
+          <a href='https://www.linkedin.com/in/elhadj-mamadou-bah-02676531b' target='_blank' rel="noopener noreferrer" aria-label="LinkedIn">
             <FaLinkedin className='icon' />
           </a>
           <a href='https://github.com/bem00224' target='_blank' rel="noopener noreferrer" aria-label='GitHub'>
