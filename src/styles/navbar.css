@@ -1,7 +1,7 @@
 .navbar {
     background-color: #fff;
     color: #333;
-    padding: 10px;
+    padding: 20px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.05);
     position: sticky;
     top: 0;
@@ -12,27 +12,33 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
 }
 
 .navbar-logo {
     display: flex;
+    -webkit-box-align: center;
     align-items: center;
     justify-content: center;
     gap: 10px;
-    margin-left: 10px;
+    cursor: pointer;
+    margin: 10px 0px 10px 0px;
     color: rgb(255, 66, 105);
     text-decoration: none;
-    /*border: 1px solid #000;*/
 }
 
-.logo {
-    width: 180px;
-    /*border: 1px solid #c02a37;*/
+.navbar-logo-icon {
+    color: rgb(255, 66, 105);
+}
+
+.logo-icon {
+    height: 40px;
+    width: 40px;
 }
   
 .title-logo {
-    font-size: 1rem;
-    border: 1px solid #c02a37;
+    font-size: 2rem;
+    /*border: 1px solid #c02a37;*/
 }
 
 .navbar-menu {
@@ -59,7 +65,14 @@
 .menu-toggle {
     display: none;
     font-size: 24px;
+    width: 30px;
     cursor: pointer;
+    color: rgb(255, 66, 105);
+}
+
+.menu-toggle .menu-toggle-icon {
+    width: 2rem;
+    height: 2rem;
 }
 
 /* Liens mobiles cachés en desktop */
