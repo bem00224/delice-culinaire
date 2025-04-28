@@ -5,7 +5,7 @@ import tarte from '../assets/tarte-pommes.jpg'
 import saumon from '../assets/saumon.webp'
 import dessert from '../assets/gateau-au-chocolat2.jpeg'
 import brioche from "../assets/brioche.png"
-import chouquettes from "../assets/chouquettes.webp"
+import chouquettes from "../assets/Chouquettes.webp"
 import cookies from "../assets/cookies.jpg"
 import Sirop from "../assets/sirop-de-fraise.jpg"
 import tisane from "../assets/tisane.webp"
