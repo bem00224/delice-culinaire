@@ -28,7 +28,7 @@ export default function MesRecettes() {
                         <div className="recettes-container-top">
                             <p>Vous n'avez aucune recette enregistrée.</p>
                             <p>Naviguez à travers le site et enregistrez vos recettes préférées! 😊</p>
-                            <Link to={"/"}>Retourner sur la page d'accueil</Link>
+                            <Link to={"/"} className='recettes-container-top-link'>Retourner sur la page d'accueil</Link>
                         </div>
                     </div>
                 ) : (

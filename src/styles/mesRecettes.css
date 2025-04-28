@@ -58,6 +58,13 @@
     margin: 15px;
 }
 
+.recettes-container-top-link {
+    color: #333;
+}
+.recettes-container-top-link:hover {
+    color: rgb(255, 66, 105);
+}
+
 .recette-card {
     display: flex;
     justify-content: center;
