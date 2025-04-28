@@ -43,7 +43,7 @@ function App() {
         <Route path='/special-recipes' element={<SpecialRecipes/>} />
         <Route path='/special-recipes/:slug' element={<SpecialRecipesDetails/>} />
         <Route path='/news' element={<News/>} />
-        <Route path='/news/slug' element={<NewsDetails/>} />
+        <Route path='/news/:slug' element={<NewsDetails/>} />
       </Routes>
       <ScrollToTopButton />
       <Footer/>
