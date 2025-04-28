@@ -13,11 +13,11 @@ import chips from "../assets/chips.webp"
 import Gommage from "../assets/Gommage.webp"
 import Bouillon from "../assets/Bouillon.webp"
 import Hachi from "../assets/Hachi.webp"
-import rapide from "../assets/rapides.jpg"
-import entrées from "../assets/entrées.png"
-import plats from "../assets/plats.png"
-import desserts from "../assets/desserts.png"
-import aperitifs from "../assets/aperitifs.png"
+import rapide from "../assets/rapid.svg"
+import entrées from "../assets/entre.svg"
+import plats from "../assets/plat.svg"
+import desserts from "../assets/desser.svg"
+import aperitifs from "../assets/aperitif.svg"
 import muffins from '../assets/muffins.webp'
 import bûchessaumon from '../assets/bûches-saumon.webp'
 import carbonara from '../assets/carbonara.webp'
@@ -953,7 +953,7 @@ export const fakeData = {
         imageSource: courge,
         title: "Comment conserver les courgettes ? ",
         slug: 'Comment_conserver_les_courgettes',
-        astuce: [
+        ingredients: [
           { name: "Astuce n°1 : choisir des courgettes de petite taille"},
           { name: "Astuce n°2 : bien conserver les courgettes" },
           { name: "Astuce n°3 : ne pas trop cuire les courgettes"},
@@ -971,7 +971,7 @@ export const fakeData = {
         imageSource: tomate,
         title: "Comment conserver les tomates?",
         slug: 'Comment_conserver_les_tomates',
-        astuce: [
+        ingredients: [
           { name: "Astuce n°1 : Ne pas placer les tomates au frigo"},
           { name: "Astuce n°2 : Comment bien conserver les tomates ?" },
           { name: "Astuce n°3 : Utilisation d'un sac en papier"},
@@ -991,7 +991,7 @@ export const fakeData = {
         imageSource: viande,
         title: "Faut-il décongeler sa viande avant de la cuire ?",
         slug: 'Faut_il_decongeler_sa_viande_avant_de_la_cuire',
-        astuce: [
+        ingredients: [
           { name: "Astuce n°1 : Pourquoi faut-il la décongeler avant ?"},
           { name: "Astuce n°2 : Perte de jus et de saveur" },
         ],
@@ -1004,8 +1004,8 @@ export const fakeData = {
         id: 4,
         imageSource: gourde,
         title: "Mauvaises odeurs dans une gourde, comment s'en débarrasser?",
-        slug: 'Faut_il_decongeler_sa_viande_avant_de_la_cuire',
-        astuce: [
+        slug: 'Mauvaises_odeurs_dans_une_gourde',
+        ingredients: [
           { name: "Astuce n°1 : Pourquoi est-il important de nettoyer sa gourde et à quelle fréquence faut-il le faire ?"},
           { name: "Astuce n°2 : Comment nettoyer sa gourde efficacement ?" },
         ],
@@ -1023,7 +1023,7 @@ export const fakeData = {
         imageSource: ratatouille,
         title: "Astuces efficaces pour éviter que la ratatouille soit trop liquide",
         slug: 'Astuces_efficaces_pour_éviter_que_la_ratatouille_soit_trop_liquide',
-        astuce: [
+        ingredients: [
           { name: "Astuce n°1 : Cuire les légumes en plusieurs temps"},
           { name: "Astuce n°2 : Faire dégorger les légumes" },
         ],
@@ -1037,7 +1037,7 @@ export const fakeData = {
         imageSource: appetit,
         title: "Pourquoi a-t-on moins d'appétit quand il fait chaud ?",
         slug: 'Pourquoi_a_t_on_moins_d_appétit_quand_il_fait_chaud',
-        astuce: [
+        ingredients: [
           { name: "Astuce n°1 : Pourquoi la chaleur diminue l’appétit en été ?"},
           { name: "Astuce n°2 : Que faire pour bien s’alimenter en été ?" },
         ],
@@ -1051,7 +1051,7 @@ export const fakeData = {
         imageSource: lemonade,
         title: "L'eau citronnée : un trésor pour votre santé",
         slug: 'eau_citronnée_un_trésor_pour_votre_sante',
-        astuce: [
+        ingredients: [
           { name: "Astuce n°1 : L’eau citronnée favorise l’hydratation"},
           { name: "Astuce n°2 : L’eau citronnée est une bonne source de vitamine C" },
           { name: "Astuce n°3 : L’eau citronnée peut favoriser la perte de poids"},
@@ -1073,7 +1073,7 @@ export const fakeData = {
         imageSource: melon,
         title: "Comment cuisiner un melon fade et sans goût?",
         slug: 'comment_cuisiner_un_melon_fade_et_sans_gout',
-        astuce: [
+        ingredients: [
           { name: "Votre melon est fade ou sans goût ?"},
           { name: "Astuce n°1 : Salade de melon et jambon de Parme"},
           { name: "Astuce n°2 : 2. Smoothie au melon" },
